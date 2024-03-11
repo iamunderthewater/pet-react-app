@@ -1,0 +1,190 @@
+#hero {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+
+#hero img {
+    object-fit: cover;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 81% 100%, 0 100%);
+
+}
+
+#hero div {
+    overflow: hidden;
+}
+
+#hero .overlay {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 80%, rgba(255,255,255,1) 100%);
+}
+
+#hero .text {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+.newtext {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+#hero .text h2 {
+    font-size:4rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    line-height: 70px;
+}
+#hero .text p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+#planet {
+    color: yellow; 
+    background-image: -webkit-linear-gradient(45deg, blue 5%, red 84%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;  
+}
+
+#category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    margin: 5rem auto;
+}
+
+#services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4rem calc(15vw - 5rem);
+}
+
+#services > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+
+}
+
+#services > div {
+    padding-left: 5%;
+}
+
+#services h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    /* margin-top: 0; */
+    margin-bottom: 1rem;
+}
+#services h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#services > div:nth-child(1) {
+    /* padding: 0 10%; */
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+#findpet {
+    background-image: url('../../public/findpets.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 14/9;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+#findpet h2 {
+    font-size: 4rem;
+    color: purple;
+    text-align: center;
+}
+
+#findpet button {
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 1rem;
+}
+
+#findpet button:hover {
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:700px) {
+    #hero {
+        grid-template-columns: 1fr;
+    }
+    #hero img {
+        clip-path: none;
+    }
+    #hero .text h2 {
+        font-size: 2rem !important;
+        margin-bottom: 0;
+    }
+
+    #hero .text p {
+        width: 80%;
+    }
+
+    #services h2 {
+        font-size: 3rem !important ;
+    }
+
+
+}
+
+@media screen and (max-width:1000px) {
+    #hero {
+        grid-template-columns: 1fr;
+    }
+    #hero img {
+        clip-path: none;
+    }
+    #hero .text h2 {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+    #hero .text p {
+        width: 80%;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+}
+

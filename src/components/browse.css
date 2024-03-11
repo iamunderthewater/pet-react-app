@@ -1,0 +1,241 @@
+.search {
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: auto;
+    min-width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
+
+
+}
+
+.search input {
+    flex-grow: 1;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+.search svg {
+    width: 30px;
+    height: 30px;
+    margin:auto 5px;
+}
+
+.petcontainer {
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category {
+    flex: 0 0 calc(25% - 20px); /* Adjust width for 4 images per row with some spacing */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.category img {
+    width: 100%; /* Ensure images take full width of their containers */
+    height: auto; /* Maintain aspect ratio */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    width: 800px; /* Set width to contain 4 cards per row /
+}
+
+.card {
+    flex: 1 0 calc(25% - 20px); /* Each card takes up 25% of the container width minus gap 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+} /
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cat-image {
+    width: 100%;
+}
+
+.cat-image img {
+    width: 100%;
+    height: auto;
+}
+
+.cat-content {
+    padding: 10px;
+
+}
+
+.cat-content div {
+    margin-bottom: 5px;
+}
+
+.petcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .pet {
+    width: calc(25% - 20px); /* Adjust width for 4 images per row with some spacing *
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .pet img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .details {
+    text-align: left;
+  }
+  .servicecard{
+    max-width: 300px;
+    min-width: 200px;
+    aspect-ratio: 1/1;
+    background: rgb(173, 47, 208);
+    border-radius: 15px;
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+.servicecard svg{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.servicecard span {
+    font-weight: bold;
+}*/
+
+/* browse.css */
+
+/* Styles for navigation */
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+  } */
+  
+  .search {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    width: 100%; /* Occupy full width */
+    max-width: 400px; /* Limit maximum width */
+    margin: auto; /* Center the search box horizontally */
+    margin-bottom: 2rem;
+  }
+  
+  .search input {
+    flex-grow: 1;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  
+  .search svg {
+    width: 30px;
+    height: 30px;
+    margin: auto 5px;
+  }
+  
+  /* Styles for pet cards */
+  .petcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items at the start of the flex container */
+    gap: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1 1 200px; /* Flex grow, flex shrink, flex basis */
+    max-width: 300px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+  
+  .card-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .card {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+  

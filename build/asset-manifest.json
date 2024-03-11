@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/pet-react-app/static/css/main.e7fa0bee.css",
+    "main.js": "/pet-react-app/static/js/main.357c9436.js",
+    "static/js/787.c267cbd8.chunk.js": "/pet-react-app/static/js/787.c267cbd8.chunk.js",
+    "static/media/findpets.jpg": "/pet-react-app/static/media/findpets.2cebfdf875be5b72a631.jpg",
+    "static/media/logo.svg": "/pet-react-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/pet-react-app/index.html",
+    "main.e7fa0bee.css.map": "/pet-react-app/static/css/main.e7fa0bee.css.map",
+    "main.357c9436.js.map": "/pet-react-app/static/js/main.357c9436.js.map",
+    "787.c267cbd8.chunk.js.map": "/pet-react-app/static/js/787.c267cbd8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7fa0bee.css",
+    "static/js/main.357c9436.js"
+  ]
+}

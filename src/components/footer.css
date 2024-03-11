@@ -1,0 +1,32 @@
+footer div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+    text-decoration: none;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+footer a:hover {
+    color:black;
+}
+footer p:hover {
+    color:black;
+}
+
+footer p {
+    font-size: x-small;
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+}
+
+footer hr {
+    width: 70%;
+    background: none;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin:1rem auto;
+
+}
